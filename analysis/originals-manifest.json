@@ -1,0 +1,77 @@
+{
+    "schema_version":  1,
+    "recorded_date":  "2026-11-06",
+    "base":  "repository-root",
+    "samples":  [
+                    {
+                        "path":  "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/Rd.EXE",
+                        "size":  267264,
+                        "sha256":  "caca5b11ae8abedf526412fdf6e4a790aa33ea91bc3b3c0f649fe64989a00f91"
+                    },
+                    {
+                        "path":  "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/Rd.EXE.before-input-patch",
+                        "size":  266240,
+                        "sha256":  "c594638099c39219a044acd2a46bac4b5f6522acde42ee950ae22c61d0dbc55c"
+                    },
+                    {
+                        "path":  "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/README_MODERN.TXT",
+                        "size":  1536,
+                        "sha256":  "f19738809950c6a318610c26aefa722f52082c54b4d489ec9460cd439a66b12a"
+                    },
+                    {
+                        "path":  "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/Register.exe",
+                        "size":  430592,
+                        "sha256":  "87f41a7111b46e0f2e72634c5d58f420b4931fa0271bcb5b44f6bf4db6375b5e"
+                    },
+                    {
+                        "path":  "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/Setup.exe",
+                        "size":  332800,
+                        "sha256":  "727dd1e333817c64907cdec9b427dcf0875c77ce5f1708b595b235db9d146c04"
+                    },
+                    {
+                        "path":  "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/data/Rd-1.dat",
+                        "size":  20054823,
+                        "sha256":  "6ae2907af40461835f5fcfcb58f6a3c0122170962272311569e0ec9f21923580"
+                    },
+                    {
+                        "path":  "originals/smuta_modern_20261013/smuta_modern/CD.DAT",
+                        "size":  146,
+                        "sha256":  "e12ab2cbeda84e228058363922b13c023ed7af5b9bbec26e9d92b31beb28e6ad"
+                    },
+                    {
+                        "path":  "originals/smuta_modern_20261013/smuta_modern/DISPDIB.DLL",
+                        "size":  6992,
+                        "sha256":  "2ea7f4015beedc6d198b5e423c4ef33fab2b73b2ab8c8324a657015d8973ab79"
+                    },
+                    {
+                        "path":  "originals/smuta_modern_20261013/smuta_modern/README_MODERN.TXT",
+                        "size":  1694,
+                        "sha256":  "5468ed421813f4b4d53d7baeaca263bdef13fa7698bf565b82bc45e9532ca56c"
+                    },
+                    {
+                        "path":  "originals/smuta_modern_20261013/smuta_modern/SETUP.EXE",
+                        "size":  229376,
+                        "sha256":  "aa764ad6d325388760e010b8054280222e99f76af9eee9d1a1522dfb7040c643"
+                    },
+                    {
+                        "path":  "originals/smuta_modern_20261013/smuta_modern/SMUTA.DAT",
+                        "size":  8716710,
+                        "sha256":  "6e13c4b65e4530291b11e3d4cd6280d874c489837e7e74c5f53b686ca69a74e8"
+                    },
+                    {
+                        "path":  "originals/smuta_modern_20261013/smuta_modern/SMUTA.EXE",
+                        "size":  284160,
+                        "sha256":  "1b7f8e5d010e225139f3a03f3721aff39d5e0b8c1c4ef42106c14002ea6405bb"
+                    },
+                    {
+                        "path":  "originals/smuta_modern_20261013/smuta_modern/smuta_music.dll",
+                        "size":  531456,
+                        "sha256":  "1a47ff1c669c1d71f9660d6a914901374319bdb09891c94dd92a603da864dbdd"
+                    },
+                    {
+                        "path":  "originals/smuta_modern_20261013/smuta_modern/waveopen.dll",
+                        "size":  6144,
+                        "sha256":  "cac7b92b03ef61d81df1274e815414789b29bfa78abf1a0b72e41a0a4964555a"
+                    }
+                ]
+}

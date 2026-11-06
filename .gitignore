@@ -1,0 +1,27 @@
+# Game distributions are local, immutable research inputs.
+/originals/
+
+# Build products and local runtime data.
+/build/
+/artifacts/
+/user-data/
+/saves/
+/config/
+*.sav
+*.log
+__pycache__/
+*.py[cod]
+.cache/
+.vs/
+
+# Persistent research stays outside build/, but is not distributed.
+/decompiled/
+/research/*
+!/research/README.md
+*.gpr
+*.rep/
+/analysis/local/
+
+# Local scratch files.
+/tmp/
+*.tmp
