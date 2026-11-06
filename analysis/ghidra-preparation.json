@@ -1,0 +1,52 @@
+﻿{
+    "schema_version":  1,
+    "run_id":  "s01-initial",
+    "ghidra_version":  "12.1.2",
+    "java_version":  "Temurin 21.0.12.1+1",
+    "address_system":  "Ghidra PE loader virtual addresses; not file offsets or runtime addresses",
+    "original_files":  84,
+    "originals_unchanged":  true,
+    "samples":  [
+                    {
+                        "game":  "smuta",
+                        "sample":  "originals/smuta_modern_20261013/smuta_modern/SMUTA.EXE",
+                        "sha256":  "1b7f8e5d010e225139f3a03f3721aff39d5e0b8c1c4ef42106c14002ea6405bb",
+                        "format":  "Portable Executable (PE)",
+                        "language":  "x86:LE:32:default",
+                        "compiler_spec":  "borlanddelphi",
+                        "image_base":  "0x00400000",
+                        "pe_entry_rva":  "0x00001000",
+                        "ghidra_entry":  "0x00401000",
+                        "functions":  1016,
+                        "decompiled":  1016,
+                        "failed":  0,
+                        "instructions":  61120,
+                        "project":  "research/ghidra/s01-initial/SmutaRD.gpr",
+                        "export":  "decompiled/s01-initial/smuta",
+                        "reopen_check":  "passed"
+                    },
+                    {
+                        "game":  "raising-dead",
+                        "sample":  "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/Rd.EXE",
+                        "sha256":  "caca5b11ae8abedf526412fdf6e4a790aa33ea91bc3b3c0f649fe64989a00f91",
+                        "format":  "Portable Executable (PE)",
+                        "language":  "x86:LE:32:default",
+                        "compiler_spec":  "borlandcpp",
+                        "image_base":  "0x00400000",
+                        "pe_entry_rva":  "0x00001000",
+                        "ghidra_entry":  "0x00401000",
+                        "functions":  1260,
+                        "decompiled":  1260,
+                        "failed":  0,
+                        "instructions":  64891,
+                        "project":  "research/ghidra/s01-initial/SmutaRD.gpr",
+                        "export":  "decompiled/s01-initial/raising-dead",
+                        "reopen_check":  "passed"
+                    }
+                ],
+    "limitations":  [
+                        "Automatic discovery only; no completeness claim",
+                        "Pseudocode types and behavior not verified",
+                        "System DLL resolution is host dependent; see local logs"
+                    ]
+}

@@ -1,0 +1,13 @@
+/* Ghidra address: 00437c52; SetCursorPos */
+
+BOOL __stdcall SetCursorPos(int X,int Y)
+
+{
+  BOOL BVar1;
+  
+                    /* WARNING: Could not recover jumptable at 0x00437c52. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  BVar1 = SetCursorPos(X,Y);
+  return BVar1;
+}
+

@@ -1,0 +1,16 @@
+/* Ghidra address: 0041d95a; FUN_0041d95a */
+
+LPVOID FUN_0041d95a(void)
+
+{
+  LPVOID pvVar1;
+  
+  pvVar1 = (LPVOID)FUN_0040d59c();
+  if (pvVar1 == (LPVOID)0x0) {
+    FUN_0040d5d0();
+    pvVar1 = FUN_00426c10();
+    FUN_0040d56c();
+  }
+  return pvVar1;
+}
+

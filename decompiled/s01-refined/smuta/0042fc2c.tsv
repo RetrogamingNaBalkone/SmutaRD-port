@@ -1,0 +1,16 @@
+0042fc2c	55	PUSH EBP
+0042fc2d	8bec	MOV EBP,ESP
+0042fc2f	8d65f4	LEA ESP,[EBP + -0xc]
+0042fc32	9bd97dfc	FSTCW word ptr [EBP + -0x4]
+0042fc36	9b	WAIT
+0042fc37	8a45fd	MOV AL,byte ptr [EBP + -0x3]
+0042fc3a	804dfd0c	OR byte ptr [EBP + -0x3],0xc
+0042fc3e	d96dfc	FLDCW word ptr [EBP + -0x4]
+0042fc41	df7df4	FISTP qword ptr [EBP + -0xc]
+0042fc44	8845fd	MOV byte ptr [EBP + -0x3],AL
+0042fc47	d96dfc	FLDCW word ptr [EBP + -0x4]
+0042fc4a	8b45f4	MOV EAX,dword ptr [EBP + -0xc]
+0042fc4d	8b55f8	MOV EDX,dword ptr [EBP + -0x8]
+0042fc50	8be5	MOV ESP,EBP
+0042fc52	5d	POP EBP
+0042fc53	c3	RET

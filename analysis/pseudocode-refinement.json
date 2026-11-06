@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "address_space": "Ghidra VA; image base 0x00400000; not runtime or file offsets",
+  "scope": "10 targeted functions; remaining automatic exports are not validated",
+  "limitations": [
+    "No gameplay verification",
+    "Opaque structures and indirect return types remain provisional",
+    "x87 ROUND output omits CW truncation; see export headers and report"
+  ],
+  "samples": [
+    {
+      "game": "smuta",
+      "sample": "originals/smuta_modern_20261013/smuta_modern/SMUTA.EXE",
+      "sha256": "1b7f8e5d010e225139f3a03f3721aff39d5e0b8c1c4ef42106c14002ea6405bb",
+      "functions": [
+        {
+          "entry": "0040840c",
+          "body_bytes": 287,
+          "instructions": 105,
+          "pseudocode_sha256": "d1205d63f41970e8b87dc82e67edd8a758ee145e215731ed932b6b286e891269",
+          "listing_sha256": "743fd7c912a984bea391ac536cb9453f58ab39f5d99f01c1030b481a74b5ffcf"
+        },
+        {
+          "entry": "0041181c",
+          "body_bytes": 3593,
+          "instructions": 1027,
+          "pseudocode_sha256": "3f078da5134a4cb12d424d03b86b7a9fb1b7d75b27b5fab66cd5080720e10038",
+          "listing_sha256": "74e9c461dc49b9c4c29f8a84b13230debaf88f7a662c8b53ce31913672151b6b"
+        },
+        {
+          "entry": "00412628",
+          "body_bytes": 1182,
+          "instructions": 454,
+          "pseudocode_sha256": "19ba8576a25b3e9a411c9b612df1b972d354b2e3f8eb0958df745d012c9c555c",
+          "listing_sha256": "6d0a8f9afa664d4d962a2c3b2d569e9b20037f8f0c9184d3e08b5835baadbc0d"
+        },
+        {
+          "entry": "0040e4ac",
+          "body_bytes": 860,
+          "instructions": 279,
+          "pseudocode_sha256": "da6b9c8f3e5d063e279d1a9525c697f5ae48f012a3c0d0d9030e00874bdf5e16",
+          "listing_sha256": "7b9dd20f7ec27116317812996a0ec015e0e960b78f8d403b4e18596aa8ae5fe2"
+        },
+        {
+          "entry": "0042fc2c",
+          "body_bytes": 40,
+          "instructions": 16,
+          "pseudocode_sha256": "0eed7b4525a3e1aed9ef9fd108816578f5b2f918a545452cc4a079041e83acfd",
+          "listing_sha256": "2bdba9f102878e74f80ab9c3e4dd474b2664786aa69ad485594bfd0e36fbcb17"
+        }
+      ]
+    },
+    {
+      "game": "raising-dead",
+      "sample": "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/Rd.EXE",
+      "sha256": "caca5b11ae8abedf526412fdf6e4a790aa33ea91bc3b3c0f649fe64989a00f91",
+      "functions": [
+        {
+          "entry": "004044ec",
+          "body_bytes": 287,
+          "instructions": 105,
+          "pseudocode_sha256": "823ff6a4de124a979b6286cd42f97f594f062a9a5f254e162ce255227993142a",
+          "listing_sha256": "a3e2789ebff4a2fd2c43bd07fc721569ce896a667cb285c7c640f96a25715aaa"
+        },
+        {
+          "entry": "004169e0",
+          "body_bytes": 3593,
+          "instructions": 1027,
+          "pseudocode_sha256": "78db4a88666f90282e08716dfcaaad8a54692c091f2cc7211be4107dab5433f7",
+          "listing_sha256": "da35f2dad3c1055436ab222ac150a26c3a54c4084f4a2bb6b0849758de8a3959"
+        },
+        {
+          "entry": "004177ec",
+          "body_bytes": 1182,
+          "instructions": 454,
+          "pseudocode_sha256": "4c31fcf822683d033c23f31c898c1c3e93d2c04d910775206660b23c5d24fcc1",
+          "listing_sha256": "a2c0025b82510f71aad99da8552e8dcc06105b8f6447f19f3f8029008421078e"
+        },
+        {
+          "entry": "00424f88",
+          "body_bytes": 860,
+          "instructions": 279,
+          "pseudocode_sha256": "7f08f857631cec5a84eaa86b1b44de690f73a124a185ac5438fdf4ff39fa4337",
+          "listing_sha256": "626617003058add3b82c3a08e55a1aad6c3ac4e5b7dc75aa9c99dc874c2e20e2"
+        },
+        {
+          "entry": "00433130",
+          "body_bytes": 40,
+          "instructions": 16,
+          "pseudocode_sha256": "f8b9044294106c8172be552b58238b6f129503a9c00573aecf953535bab7f1fe",
+          "listing_sha256": "212ae2c022fefdcc683829b18ed51c46e8ede73c47332c701545e6e2c5643c41"
+        }
+      ]
+    }
+  ]
+}

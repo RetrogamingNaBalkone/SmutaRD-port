@@ -15,7 +15,6 @@ __pycache__/
 .vs/
 
 # Persistent research stays outside build/, but is not distributed.
-/decompiled/
 /research/*
 !/research/README.md
 *.gpr

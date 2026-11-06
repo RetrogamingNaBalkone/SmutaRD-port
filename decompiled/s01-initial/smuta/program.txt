@@ -1,0 +1,166 @@
+ghidra_version=12.1.2
+program=SMUTA.EXE
+executable_sha256=1b7f8e5d010e225139f3a03f3721aff39d5e0b8c1c4ef42106c14002ea6405bb
+format=Portable Executable (PE)
+language=x86:LE:32:default
+compiler_spec=borlanddelphi
+image_base=00400000
+address_system=Ghidra loader addresses; not file offsets or live runtime addresses
+analysis=default auto-analysis; no manual function/type corrections
+decompiler_timeout_seconds=60 per function
+block=Headers	00400000	004003ff	read=true	write=false	execute=false
+block=CODE	00401000	00433fff	read=true	write=false	execute=true
+block=DATA	00434000	0049afff	read=true	write=true	execute=false
+block=.idata	0049b000	0049bfff	read=true	write=true	execute=false
+block=.edata	0049c000	0049cfff	read=true	write=false	execute=false
+block=.reloc	0049d000	004a0fff	read=true	write=false	execute=false
+block=.rsrc	004a1000	004a1fff	read=true	write=false	execute=false
+block=.Silvana	004a2000	004a2fff	read=true	write=true	execute=false
+block=.smuinp	004a3000	004a33ff	read=true	write=true	execute=true
+block=.smuini	004a4000	004a41ff	read=true	write=false	execute=false
+block=.smudpi	004a5000	004a5bff	read=true	write=false	execute=false
+block=.smuogg	004a6000	004ad3ff	read=true	write=true	execute=true
+entry=00401074
+entry=004041c8
+entry=004379d4
+entry=0042b7b4
+entry=0042b7dc
+entry=00401000
+analysis_option=ASCII Strings=true
+analysis_option=ASCII Strings.Create Strings Containing Existing Strings=true
+analysis_option=ASCII Strings.Create Strings Containing References=true
+analysis_option=ASCII Strings.Force Model Reload=false
+analysis_option=ASCII Strings.Minimum String Length=LEN_5
+analysis_option=ASCII Strings.Model File=StringModel.sng
+analysis_option=ASCII Strings.Require Null Termination for String=true
+analysis_option=ASCII Strings.Search Only in Accessible Memory Blocks=true
+analysis_option=ASCII Strings.String Start Alignment=ALIGN_1
+analysis_option=ASCII Strings.String end alignment=4
+analysis_option=Aggressive Instruction Finder=false
+analysis_option=Aggressive Instruction Finder.Create Analysis Bookmarks=true
+analysis_option=Apply Data Archives=true
+analysis_option=Apply Data Archives.Archive Chooser=[Auto-Detect]
+analysis_option=Apply Data Archives.Create Analysis Bookmarks=true
+analysis_option=Apply Data Archives.GDT User File Archive Path=null
+analysis_option=Apply Data Archives.User Project Archive Path=null
+analysis_option=Call Convention ID=true
+analysis_option=Call Convention ID.Analysis Decompiler Timeout (sec)=60
+analysis_option=Call-Fixup Installer=true
+analysis_option=Condense Filler Bytes=false
+analysis_option=Condense Filler Bytes.Filler Value=Auto
+analysis_option=Condense Filler Bytes.Minimum number of sequential bytes=1
+analysis_option=Create Address Tables=true
+analysis_option=Create Address Tables.Allow Offcut References=false
+analysis_option=Create Address Tables.Auto Label Table=false
+analysis_option=Create Address Tables.Create Analysis Bookmarks=true
+analysis_option=Create Address Tables.Maxmimum Pointer Distance=16777215
+analysis_option=Create Address Tables.Minimum Pointer Address=4132
+analysis_option=Create Address Tables.Minimum Table Size=3
+analysis_option=Create Address Tables.Pointer Alignment=1
+analysis_option=Create Address Tables.Relocation Table Guide=true
+analysis_option=Create Address Tables.Table Alignment=4
+analysis_option=Data Reference=true
+analysis_option=Data Reference.Address Table Alignment=1
+analysis_option=Data Reference.Address Table Minimum Size=3
+analysis_option=Data Reference.Align End of Strings=false
+analysis_option=Data Reference.Ascii String References=true
+analysis_option=Data Reference.Create Address Tables=true
+analysis_option=Data Reference.Minimum String Length=5
+analysis_option=Data Reference.References to Pointers=true
+analysis_option=Data Reference.Relocation Table Guide=true
+analysis_option=Data Reference.Respect Execute Flag=true
+analysis_option=Data Reference.Subroutine References=true
+analysis_option=Data Reference.Switch Table References=false
+analysis_option=Data Reference.Unicode String References=true
+analysis_option=Decompiler Parameter ID=true
+analysis_option=Decompiler Parameter ID.Analysis Clear Level=ANALYSIS
+analysis_option=Decompiler Parameter ID.Analysis Decompiler Timeout (sec)=60
+analysis_option=Decompiler Parameter ID.Commit Data Types=true
+analysis_option=Decompiler Parameter ID.Commit Void Return Values=false
+analysis_option=Decompiler Parameter ID.Prototype Evaluation=__register
+analysis_option=Decompiler Switch Analysis=true
+analysis_option=Decompiler Switch Analysis.Analysis Decompiler Timeout (sec)=60
+analysis_option=Demangler GNU=true
+analysis_option=Demangler GNU.Apply Function Calling Conventions=true
+analysis_option=Demangler GNU.Apply Function Signatures=true
+analysis_option=Demangler GNU.Demangle Only Known Mangled Symbols=false
+analysis_option=Demangler GNU.Demangler Format=AUTO
+analysis_option=Demangler GNU.Timeout (seconds)=3
+analysis_option=Demangler GNU.Use Deprecated Demangler=false
+analysis_option=Demangler GNU.Use Standard Text Replacements=true
+analysis_option=Demangler Microsoft=true
+analysis_option=Demangler Microsoft.msdApplyOptions={
+	interpretation: FUNCTION_IF_EXISTS,
+	applyCallingConvention: true,
+	applySignature: true,
+	demangleOnlyKnownPatterns: true,
+	doDisassembly: true
+}
+analysis_option=Demangler Microsoft.msdOutputOptions=ghidra.app.util.demangler.microsoft.options.MsdOutputOption@9e5b
+analysis_option=Disassemble Entry Points=true
+analysis_option=Disassemble Entry Points.Respect Execute Flag=true
+analysis_option=Embedded Media=true
+analysis_option=Embedded Media.Create Analysis Bookmarks=true
+analysis_option=External Entry References=true
+analysis_option=Function ID=true
+analysis_option=Function ID.Always Apply FID Labels=false
+analysis_option=Function ID.Create Analysis Bookmarks=true
+analysis_option=Function ID.Instruction Count Threshold=14.6
+analysis_option=Function ID.Multiple Match Threshold=30.0
+analysis_option=Function Start Search=true
+analysis_option=Function Start Search After Code=true
+analysis_option=Function Start Search After Code.Bookmark Functions=false
+analysis_option=Function Start Search After Code.Search Data Blocks=false
+analysis_option=Function Start Search.Bookmark Functions=false
+analysis_option=Function Start Search.Search Data Blocks=false
+analysis_option=Non-Returning Functions - Discovered=true
+analysis_option=Non-Returning Functions - Discovered.Create Analysis Bookmarks=true
+analysis_option=Non-Returning Functions - Discovered.Function Non-return Threshold=3
+analysis_option=Non-Returning Functions - Discovered.Repair Flow Damage=true
+analysis_option=Non-Returning Functions - Known=true
+analysis_option=Non-Returning Functions - Known.Create Analysis Bookmarks=true
+analysis_option=PDB MSDIA=false
+analysis_option=PDB MSDIA.Search untrusted symbol servers=false
+analysis_option=PDB Universal=true
+analysis_option=PDB Universal.Import Source Line Info=true
+analysis_option=PDB Universal.Search untrusted symbol servers=false
+analysis_option=Reference=true
+analysis_option=Reference.Address Table Alignment=1
+analysis_option=Reference.Address Table Minimum Size=3
+analysis_option=Reference.Align End of Strings=false
+analysis_option=Reference.Ascii String References=true
+analysis_option=Reference.Create Address Tables=true
+analysis_option=Reference.Minimum String Length=5
+analysis_option=Reference.References to Pointers=true
+analysis_option=Reference.Relocation Table Guide=true
+analysis_option=Reference.Respect Execute Flag=true
+analysis_option=Reference.Subroutine References=true
+analysis_option=Reference.Switch Table References=false
+analysis_option=Reference.Unicode String References=true
+analysis_option=Scalar Operand References=true
+analysis_option=Scalar Operand References.Relocation Table Guide=true
+analysis_option=Shared Return Calls=true
+analysis_option=Shared Return Calls.Allow Conditional Jumps=false
+analysis_option=Shared Return Calls.Assume Contiguous Functions Only=true
+analysis_option=Stack=true
+analysis_option=Stack.Create Local Variables=true
+analysis_option=Stack.Create Param Variables=false
+analysis_option=Stack.Max Threads=2
+analysis_option=Subroutine References=true
+analysis_option=Subroutine References.Create Thunks Early=true
+analysis_option=Variadic Function Signature Override=false
+analysis_option=Variadic Function Signature Override.Create Analysis Bookmarks=false
+analysis_option=WindowsPE x86 Propagate External Parameters=false
+analysis_option=WindowsResourceReference=true
+analysis_option=WindowsResourceReference.Create Analysis Bookmarks=true
+analysis_option=X86 Function Callee Purge=true
+analysis_option=x86 Constant Reference Analyzer=true
+analysis_option=x86 Constant Reference Analyzer.Create Data from pointer=false
+analysis_option=x86 Constant Reference Analyzer.Function parameter/return Pointer analysis=true
+analysis_option=x86 Constant Reference Analyzer.Max Threads=2
+analysis_option=x86 Constant Reference Analyzer.Min absolute reference=4
+analysis_option=x86 Constant Reference Analyzer.Require pointer param data type=false
+analysis_option=x86 Constant Reference Analyzer.Speculative reference max=256
+analysis_option=x86 Constant Reference Analyzer.Speculative reference min=1024
+analysis_option=x86 Constant Reference Analyzer.Stored Value Pointer analysis=true
+analysis_option=x86 Constant Reference Analyzer.Trust values read from writable memory=true

@@ -1,0 +1,814 @@
+{
+  "schema_version": 1,
+  "address_space": "Ghidra virtual addresses; image base 0x00400000; not runtime addresses",
+  "source": "Existing Ghidra 12.1.2 s01-initial exports; no new decompilation",
+  "method": "Exact instruction text and flow after per-function address renaming; internal targets retain instruction index; external address identity retained within each function",
+  "filters": {
+    "min_body_bytes": 150,
+    "min_instructions": 30,
+    "contiguous_body_required": true
+  },
+  "limitations": [
+    "Address-like numeric literals are renamed too; constants or different callees may create false positives.",
+    "No cross-function reference equivalence, caller contracts, indirect targets, or runtime behavior verified.",
+    "Includes compiler/runtime/library code; pair count is not shared engine coverage.",
+    "Export bytes in all eligible contiguous bodies checked against PE sections; this does not validate instruction decoding or function boundaries."
+  ],
+  "samples": [
+    {
+      "game": "smuta",
+      "path": "originals/smuta_modern_20261013/smuta_modern/SMUTA.EXE",
+      "size": 284160,
+      "sha256": "1b7f8e5d010e225139f3a03f3721aff39d5e0b8c1c4ef42106c14002ea6405bb"
+    },
+    {
+      "game": "raising-dead",
+      "path": "originals/Raising-Dead_modern_20261013/Raising-Dead_modern/Rd.EXE",
+      "size": 267264,
+      "sha256": "caca5b11ae8abedf526412fdf6e4a790aa33ea91bc3b3c0f649fe64989a00f91"
+    }
+  ],
+  "pair_count": 65,
+  "pairs": [
+    {
+      "smuta": {
+        "entry": "0041181c",
+        "body_bytes": 3593,
+        "instructions": 1027
+      },
+      "raising_dead": {
+        "entry": "004169e0",
+        "body_bytes": 3593,
+        "instructions": 1027
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040215c",
+        "body_bytes": 1413,
+        "instructions": 382
+      },
+      "raising_dead": {
+        "entry": "00408114",
+        "body_bytes": 1413,
+        "instructions": 382
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00412628",
+        "body_bytes": 1182,
+        "instructions": 454
+      },
+      "raising_dead": {
+        "entry": "004177ec",
+        "body_bytes": 1182,
+        "instructions": 454
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040107c",
+        "body_bytes": 1070,
+        "instructions": 252
+      },
+      "raising_dead": {
+        "entry": "00423a98",
+        "body_bytes": 1070,
+        "instructions": 252
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040e4ac",
+        "body_bytes": 860,
+        "instructions": 279
+      },
+      "raising_dead": {
+        "entry": "00424f88",
+        "body_bytes": 860,
+        "instructions": 279
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040e934",
+        "body_bytes": 853,
+        "instructions": 277
+      },
+      "raising_dead": {
+        "entry": "00425408",
+        "body_bytes": 853,
+        "instructions": 277
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004034cc",
+        "body_bytes": 801,
+        "instructions": 221
+      },
+      "raising_dead": {
+        "entry": "00409354",
+        "body_bytes": 801,
+        "instructions": 221
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00430f44",
+        "body_bytes": 726,
+        "instructions": 243
+      },
+      "raising_dead": {
+        "entry": "00435764",
+        "body_bytes": 726,
+        "instructions": 243
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004307f8",
+        "body_bytes": 720,
+        "instructions": 263
+      },
+      "raising_dead": {
+        "entry": "0043467c",
+        "body_bytes": 720,
+        "instructions": 263
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00402d64",
+        "body_bytes": 611,
+        "instructions": 191
+      },
+      "raising_dead": {
+        "entry": "00408cf8",
+        "body_bytes": 611,
+        "instructions": 191
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040f9d0",
+        "body_bytes": 534,
+        "instructions": 181
+      },
+      "raising_dead": {
+        "entry": "00401118",
+        "body_bytes": 534,
+        "instructions": 181
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042e284",
+        "body_bytes": 502,
+        "instructions": 167
+      },
+      "raising_dead": {
+        "entry": "004302c8",
+        "body_bytes": 502,
+        "instructions": 167
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042e284",
+        "body_bytes": 502,
+        "instructions": 167
+      },
+      "raising_dead": {
+        "entry": "004304c0",
+        "body_bytes": 502,
+        "instructions": 167
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00411634",
+        "body_bytes": 486,
+        "instructions": 182
+      },
+      "raising_dead": {
+        "entry": "004167f8",
+        "body_bytes": 486,
+        "instructions": 182
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0041b3f4",
+        "body_bytes": 469,
+        "instructions": 155
+      },
+      "raising_dead": {
+        "entry": "0042051c",
+        "body_bytes": 469,
+        "instructions": 155
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040abac",
+        "body_bytes": 454,
+        "instructions": 130
+      },
+      "raising_dead": {
+        "entry": "00429a94",
+        "body_bytes": 454,
+        "instructions": 130
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004091ec",
+        "body_bytes": 449,
+        "instructions": 129
+      },
+      "raising_dead": {
+        "entry": "0042694c",
+        "body_bytes": 449,
+        "instructions": 129
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0041b5cc",
+        "body_bytes": 380,
+        "instructions": 122
+      },
+      "raising_dead": {
+        "entry": "004206f4",
+        "body_bytes": 380,
+        "instructions": 122
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004320b4",
+        "body_bytes": 371,
+        "instructions": 108
+      },
+      "raising_dead": {
+        "entry": "00436ba0",
+        "body_bytes": 371,
+        "instructions": 108
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004323d8",
+        "body_bytes": 358,
+        "instructions": 136
+      },
+      "raising_dead": {
+        "entry": "00436f4c",
+        "body_bytes": 358,
+        "instructions": 136
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0041b160",
+        "body_bytes": 352,
+        "instructions": 116
+      },
+      "raising_dead": {
+        "entry": "00420274",
+        "body_bytes": 352,
+        "instructions": 116
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00430b74",
+        "body_bytes": 345,
+        "instructions": 113
+      },
+      "raising_dead": {
+        "entry": "00434ce8",
+        "body_bytes": 345,
+        "instructions": 113
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042f094",
+        "body_bytes": 339,
+        "instructions": 136
+      },
+      "raising_dead": {
+        "entry": "004316e0",
+        "body_bytes": 339,
+        "instructions": 136
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042eacc",
+        "body_bytes": 329,
+        "instructions": 134
+      },
+      "raising_dead": {
+        "entry": "0043109c",
+        "body_bytes": 329,
+        "instructions": 134
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00410b64",
+        "body_bytes": 325,
+        "instructions": 113
+      },
+      "raising_dead": {
+        "entry": "00422ab8",
+        "body_bytes": 325,
+        "instructions": 113
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0041b748",
+        "body_bytes": 325,
+        "instructions": 103
+      },
+      "raising_dead": {
+        "entry": "00420870",
+        "body_bytes": 325,
+        "instructions": 103
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042de84",
+        "body_bytes": 321,
+        "instructions": 102
+      },
+      "raising_dead": {
+        "entry": "0042fec8",
+        "body_bytes": 321,
+        "instructions": 102
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004093b0",
+        "body_bytes": 319,
+        "instructions": 93
+      },
+      "raising_dead": {
+        "entry": "00426b10",
+        "body_bytes": 319,
+        "instructions": 93
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00404070",
+        "body_bytes": 316,
+        "instructions": 115
+      },
+      "raising_dead": {
+        "entry": "0040cd14",
+        "body_bytes": 316,
+        "instructions": 115
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042da20",
+        "body_bytes": 302,
+        "instructions": 113
+      },
+      "raising_dead": {
+        "entry": "0042fa18",
+        "body_bytes": 302,
+        "instructions": 113
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00431794",
+        "body_bytes": 296,
+        "instructions": 110
+      },
+      "raising_dead": {
+        "entry": "00435fb4",
+        "body_bytes": 296,
+        "instructions": 110
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040840c",
+        "body_bytes": 287,
+        "instructions": 105
+      },
+      "raising_dead": {
+        "entry": "004044ec",
+        "body_bytes": 287,
+        "instructions": 105
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00406a34",
+        "body_bytes": 282,
+        "instructions": 88
+      },
+      "raising_dead": {
+        "entry": "004234b8",
+        "body_bytes": 282,
+        "instructions": 88
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004103f4",
+        "body_bytes": 274,
+        "instructions": 104
+      },
+      "raising_dead": {
+        "entry": "00422e80",
+        "body_bytes": 274,
+        "instructions": 104
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00429936",
+        "body_bytes": 271,
+        "instructions": 96
+      },
+      "raising_dead": {
+        "entry": "0042cb95",
+        "body_bytes": 271,
+        "instructions": 96
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00431320",
+        "body_bytes": 263,
+        "instructions": 88
+      },
+      "raising_dead": {
+        "entry": "00435b40",
+        "body_bytes": 263,
+        "instructions": 88
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0043121c",
+        "body_bytes": 260,
+        "instructions": 94
+      },
+      "raising_dead": {
+        "entry": "00435a3c",
+        "body_bytes": 260,
+        "instructions": 94
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00430d58",
+        "body_bytes": 255,
+        "instructions": 80
+      },
+      "raising_dead": {
+        "entry": "00435578",
+        "body_bytes": 255,
+        "instructions": 80
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040c884",
+        "body_bytes": 253,
+        "instructions": 110
+      },
+      "raising_dead": {
+        "entry": "00428d6c",
+        "body_bytes": 253,
+        "instructions": 110
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040c984",
+        "body_bytes": 253,
+        "instructions": 110
+      },
+      "raising_dead": {
+        "entry": "00428e6c",
+        "body_bytes": 253,
+        "instructions": 110
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004065e8",
+        "body_bytes": 247,
+        "instructions": 82
+      },
+      "raising_dead": {
+        "entry": "00423068",
+        "body_bytes": 247,
+        "instructions": 82
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00430e58",
+        "body_bytes": 235,
+        "instructions": 84
+      },
+      "raising_dead": {
+        "entry": "00435678",
+        "body_bytes": 235,
+        "instructions": 84
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042f96c",
+        "body_bytes": 233,
+        "instructions": 89
+      },
+      "raising_dead": {
+        "entry": "00432e70",
+        "body_bytes": 233,
+        "instructions": 89
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040c6d8",
+        "body_bytes": 229,
+        "instructions": 101
+      },
+      "raising_dead": {
+        "entry": "00428bc0",
+        "body_bytes": 229,
+        "instructions": 101
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00409020",
+        "body_bytes": 227,
+        "instructions": 95
+      },
+      "raising_dead": {
+        "entry": "00426780",
+        "body_bytes": 227,
+        "instructions": 95
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00404d40",
+        "body_bytes": 226,
+        "instructions": 84
+      },
+      "raising_dead": {
+        "entry": "0040cb64",
+        "body_bytes": 226,
+        "instructions": 84
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042dc08",
+        "body_bytes": 224,
+        "instructions": 83
+      },
+      "raising_dead": {
+        "entry": "0042fc00",
+        "body_bytes": 224,
+        "instructions": 83
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00431da8",
+        "body_bytes": 223,
+        "instructions": 86
+      },
+      "raising_dead": {
+        "entry": "0043638c",
+        "body_bytes": 223,
+        "instructions": 86
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042fb2a",
+        "body_bytes": 216,
+        "instructions": 92
+      },
+      "raising_dead": {
+        "entry": "0043302e",
+        "body_bytes": 216,
+        "instructions": 92
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00401d8c",
+        "body_bytes": 215,
+        "instructions": 71
+      },
+      "raising_dead": {
+        "entry": "00407d18",
+        "body_bytes": 215,
+        "instructions": 71
+      }
+    },
+    {
+      "smuta": {
+        "entry": "004042c0",
+        "body_bytes": 210,
+        "instructions": 82
+      },
+      "raising_dead": {
+        "entry": "0040c0f8",
+        "body_bytes": 210,
+        "instructions": 82
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00429ac1",
+        "body_bytes": 194,
+        "instructions": 75
+      },
+      "raising_dead": {
+        "entry": "0042ad62",
+        "body_bytes": 194,
+        "instructions": 75
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00410054",
+        "body_bytes": 190,
+        "instructions": 64
+      },
+      "raising_dead": {
+        "entry": "0042386c",
+        "body_bytes": 190,
+        "instructions": 64
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040afbc",
+        "body_bytes": 183,
+        "instructions": 71
+      },
+      "raising_dead": {
+        "entry": "004274c0",
+        "body_bytes": 183,
+        "instructions": 71
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042db50",
+        "body_bytes": 183,
+        "instructions": 80
+      },
+      "raising_dead": {
+        "entry": "0042fb48",
+        "body_bytes": 183,
+        "instructions": 80
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042ed84",
+        "body_bytes": 176,
+        "instructions": 77
+      },
+      "raising_dead": {
+        "entry": "00431354",
+        "body_bytes": 176,
+        "instructions": 77
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042ee34",
+        "body_bytes": 175,
+        "instructions": 76
+      },
+      "raising_dead": {
+        "entry": "00431404",
+        "body_bytes": 175,
+        "instructions": 76
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0043232c",
+        "body_bytes": 170,
+        "instructions": 71
+      },
+      "raising_dead": {
+        "entry": "00436e28",
+        "body_bytes": 170,
+        "instructions": 71
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00412ac8",
+        "body_bytes": 169,
+        "instructions": 65
+      },
+      "raising_dead": {
+        "entry": "00417c8c",
+        "body_bytes": 169,
+        "instructions": 65
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042bde8",
+        "body_bytes": 166,
+        "instructions": 62
+      },
+      "raising_dead": {
+        "entry": "0042d7f8",
+        "body_bytes": 166,
+        "instructions": 62
+      }
+    },
+    {
+      "smuta": {
+        "entry": "00430ac8",
+        "body_bytes": 164,
+        "instructions": 58
+      },
+      "raising_dead": {
+        "entry": "00434c3c",
+        "body_bytes": 164,
+        "instructions": 58
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0042dde8",
+        "body_bytes": 154,
+        "instructions": 62
+      },
+      "raising_dead": {
+        "entry": "0042fe2c",
+        "body_bytes": 154,
+        "instructions": 62
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040fe78",
+        "body_bytes": 153,
+        "instructions": 51
+      },
+      "raising_dead": {
+        "entry": "00423660",
+        "body_bytes": 153,
+        "instructions": 51
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0041050c",
+        "body_bytes": 153,
+        "instructions": 64
+      },
+      "raising_dead": {
+        "entry": "00422f98",
+        "body_bytes": 153,
+        "instructions": 64
+      }
+    },
+    {
+      "smuta": {
+        "entry": "0040dbbc",
+        "body_bytes": 151,
+        "instructions": 58
+      },
+      "raising_dead": {
+        "entry": "004246b0",
+        "body_bytes": 151,
+        "instructions": 58
+      }
+    }
+  ]
+}
